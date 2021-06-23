@@ -22,6 +22,7 @@ a{
     margin-left: auto;
     margin-right: auto;
     padding: 0, 10px;
+
 }
 .header__top{
     padding: 44px 0 45px;
@@ -37,9 +38,11 @@ a{
     justify-content: space-between;   
 }
 .item__menu{
+    position: relative;
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
+    z-index: 4;
 }
 .button{   
     position: relative;
