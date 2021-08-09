@@ -5,63 +5,90 @@
 }
 body{
     max-width: 1440px;
+    min-width: 1000px;
     font-family: Montserrat;
+    background: url(../images/fon.jpg);
+    color: rgba(179, 179, 179, 0.925);
 }
 a{
     text-decoration: none;
+    color: rgb(219, 218, 218);
 }
 .header{
+    z-index: 2;
+    background: url(../images/logo_img.png) top right no-repeat;
+    height: 800px;
     
-    background: linear-gradient(to right, #FFE2DE 80%, #fff 20%);
-    font-family: Montserrat;
 }
 
-
-.container{
-    max-width: 1135px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0, 10px;
-
-}
 .header__top{
-    padding: 44px 0 45px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 20px;
+    z-index: 2;
+    
+}
+
+
+.button, .logo{
+    
+    padding: 15px;
+    background-color: rgba(151, 161, 161, 0.473);
+    border-radius: 25pt;
+    box-shadow: 2px 2px 2px 0 rgba(255, 255, 255, 0.76);
+    transition: 500ms;
 }
 .header__menu{
-    width: 490px;
-    padding: 0 10px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;   
+    margin: 15px;
+    
 }
-.item__menu{
-    position: relative;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 100%;
-    z-index: 4;
-}
-.button{   
-    position: relative;
-    z-index: 3;
-    top: -10px;
-    padding: 14px 54px 15px;
-    background-color: #62D0DF;
-    color: #fff;
-}
-.header_img{
-    position: relative;
-    z-index: 2;
-    left: 590px;
-    top: -250px;
-}
-.header_img-bgrnd{
-    position: relative;
-    z-index: 1;
-    left: 632px;
-    top: -1057px;
 
+.item__menu{
+    padding: 15px;
+    margin: 0 15px ;
+    background: rgba(151, 161, 161, 0.473);
+    border-radius: 25pt;
+    box-shadow: 2px 2px 2px 0 rgba(255, 255, 255, 0.76);
+    transition: 500ms;
+}
+.item__menu:active{
+    color: rgba(77, 238, 125, 0.884);
+    box-shadow: none;
+   
+}
+.logo:active{
+    color: rgba(77, 238, 125, 0.884);
+    box-shadow: none;
+}
+.button:active{
+    color: rgba(77, 238, 125, 0.884);
+    box-shadow: none;
+}
+.header__content{
+    width: 700px;
+    margin: 100px 2px 0 10px;
+}
+.header__title{
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.header__subtitle{
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
+.header__text{
+   color: rgba(100, 148, 237, 0.719);
+   line-height: 20px;
+}
+.content_button{
+    margin-top: 20px;
+}
+.btn_item {
+    display: flex;
+    justify-content:space-between;
+
+    
 }
