@@ -3,10 +3,11 @@
 *::before{
     box-sizing: border-box;
 }
-@media (max-width: 360px) {
+@media (max-width: 960px) {
     
-    .header{
-        width: fit-content;
+    .container{
+        max-width: 720px;
+        
     }
     
 }
